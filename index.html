@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    
+    <section id="menu">
+        <div class="logo">
+            <img src="curly.jpg" alt="">
+            <h2>BELLIZZI HAIR</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+            <li><i class="fa fa-table"></i><a href="orders.html">Orders</a></li>
+            <li><i class="fa fa-bell-o"></i><a href="#">Notification</a></li>
+            <li><i class="fa fa-user"></i><a href="#">Profile</a></li>
+            <li><i class="fa fa-sign-in"></i><a href="#">Sign in</a></li>
+            <li><i class="fa fa-user-plus"></i><a href="#">Sign Up</a></li>
+        </div>
+
+        <div class="items2">
+            <li><a href="#"></a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="profile">
+                <i class="fa fa-bell-o"></i>
+                <i class="fa fa-cog"></i>
+                <img src="chatbox.png" alt="">
+            </div>
+        </div>
+
+        <div class="values">
+            <div class="val-box">
+                <img src="font.jpg" alt="">
+                <div>
+                    <h3>BOB FRONTAL HAIR</h3>
+                    <span>30</span>
+                </div>
+            </div>
+       
+            <div class="val-box">
+                <img src="hair.jpg" alt="">
+                <div>
+                    <h3>CURLY FULL FRONTAL</h3>
+                    <span>50</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <img src="lace front.jpg" alt="">
+                <div>
+                    <h3>LONG LACE HAIR</h3>
+                    <span>60</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="values2">
+            <div class="val-box">
+                <img src="part.jpg" alt="">
+                <div>
+                    <h3>BLEND FULL FRONTAL</h3>
+                    <span>70</span>
+                </div>
+            </div>
+       
+            <div class="val-box">
+                <img src="frontal.jpg" alt="">
+                <div>
+                    <h3>SHORT WAVE CURL</h3>
+                    <span>100</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <img src="humab.jpg" alt="">
+                <div>
+                    <h3>LACE CURL FRONTAL</h3>
+                    <span>40</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="values3">
+            <div class="val-box">
+                <img src="shorts.jpg" alt="">
+                <div>
+                    <h3>WAVE FRONTAL WIG</h3>
+                    <span>55</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <img src="bone.jpg" alt="">
+                <div>
+                    <h3>SHORT BONE STRAIGHT</h3>
+                    <span>10</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <img src="deep.jpg" alt="">
+                <div>
+                    <h3>DEEP CURLY HAIR</h3>
+                    <span>35</span>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        
+    </section>
+
+
+
+
+    <script>
+        $('#menu-btn').click(function() {
+            $('#menu').toggleClass("active");
+        })
+    </script>
+
+
+</body>
+</html>
