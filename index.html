@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    
 </head>
 <body>
     
@@ -21,9 +23,8 @@
         <div class="items">
             <li><i class="fa fa-home"></i><a href="#">Home</a></li>
             <li><i class="fa fa-table"></i><a href="orders.html">Orders</a></li>
-            <li><i class="fa fa-bell-o"></i><a href="#">Notification</a></li>
             <li><i class="fa fa-user"></i><a href="#">Profile</a></li>
-            <li><i class="fa fa-sign-in"></i><a href="#">Sign in</a></li>
+            <li><i class="fa fa-sign-in"></i><a href="signup.html">Sign in</a></li>
             <li><i class="fa fa-user-plus"></i><a href="#">Sign Up</a></li>
         </div>
 
@@ -44,7 +45,51 @@
                 </div>
             </div>
             <div class="profile">
-                <i class="fa fa-bell-o"></i>
+               <div class="icon" onclick="toggleNotifi()"> 
+                <img src="bell.png" alt=""> <span>5</span>
+               </div>
+               <div class="notifi-box" id="box">
+                    <h2>Notification  <span>5</span></h2>
+                    <div class="notifi-item">
+                        <img src="user1.png" alt="img">
+                        <div class="text">
+                            <h4>Mabel Anabel</h4>
+                            <p>@lorem ipsum dolor sit amet. </p>
+                        </div>
+                    </div>
+
+                    <div class="notifi-item">
+                        <img src="user1.png" alt="img">
+                        <div class="text">
+                            <h4>Mabel Anabel</h4>
+                            <p>@lorem ipsum dolor sit amet. </p>
+                        </div>
+                    </div>
+
+                    <div class="notifi-item">
+                        <img src="user1.png" alt="img">
+                        <div class="text">
+                            <h4>Mabel Anabel</h4>
+                            <p>@lorem ipsum dolor sit amet. </p>
+                        </div>
+                    </div>
+
+                    <div class="notifi-item">
+                        <img src="user1.png" alt="img">
+                        <div class="text">
+                            <h4>Mabel Anabel</h4>
+                            <p>@lorem ipsum dolor sit amet. </p>
+                        </div>
+                    </div>
+
+                    <div class="notifi-item">
+                        <img src="user1.png" alt="img">
+                        <div class="text">
+                            <h4>Mabel Anabel</h4>
+                            <p>@lorem ipsum dolor sit amet. </p>
+                        </div>
+                    </div>
+                </div>
                 <i class="fa fa-cog"></i>
                 <img src="chatbox.png" alt="">
             </div>
@@ -132,7 +177,7 @@
     </section>
 
 
-
+    <script src="styles.js"></script>
 
     <script>
         $('#menu-btn').click(function() {
